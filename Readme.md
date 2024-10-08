@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Елена  Скляренко](https://up.htmlacademy.ru/htmlcss-individual/2/user/2137245).
-* Наставник: [Наставник Андрей Изосимов] (https://htmlacademy.ru/profile/id605037).
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
+* Сайт: [Мой проект Седона](https://elenaskljar.github.io/2137245-sedona-2/).
 
 ---
 
