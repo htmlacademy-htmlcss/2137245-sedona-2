@@ -10,13 +10,13 @@
   <body>
     <header class="page-header" data-test="header">
       <nav class="navigation">
-        <a class="navigation-logo" href="#" aria-current="page">
-          <img class="page-header-logo" src="#" alt="Логотип города Седона.">
+        <a class="navigation-logo" href="#" title="Текущая страница" aria-current="page">
+          <img class="page-header-logo" src="images/logo.svg" width="138" height="64" alt="Логотип города Седона.">
         </a>
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link  navigation-link-current" href="#" aria-current="page" >Главная</a>
+            <a class="navigation-link  navigation-link-current" href="#" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -44,7 +44,7 @@
     <main class="main-index" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Седона- небольшой городок в Аризоне.</h1>
-        <img class="hero-img" src="#" lang="en" alt="Welcom to the gorgeous Sedona, because the Grand Canyon sucks!">
+        <img class="hero-img" src="images/welcome.svg" width="458" height="352" lang="en" alt="Welcomе to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -54,7 +54,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-img" src="#" alt="Дом на фоне гор">
+            <img class="advantages-img" src="images/houses-photo-1.jpg" width="800" height="385" alt="Домики на фоне гор.">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -72,7 +72,7 @@
 
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-img" src="#" alt="Каньон,горы">
+            <img class="advantages-img" src=" images/stone-bridge-photo-2.jpg" width="800" height="385" alt="Каменный мост.">
           </li>
         </ul>
       </section>
@@ -107,7 +107,9 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-form-name">
             <label class="visually-hidden" for="user-email">Укажите ваш e-mail</label>
-            <input type="text" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <input type="email" required id="user-email" name="user-email" placeholder="Ваш e-mail">
+          </p>
+          <p class="subscribe-form-button">
             <button class="subscribe-button" type="submit">Подписаться</button>
           </p>
         </form>
@@ -133,7 +135,7 @@
             </a>
           </li>
         </ul>
-        <a class="contact" href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
+        <a class="contact" href="tel:+78128121212">+7812812-12-12</a>
         <a class="copyright" href="https://htmlacademy.ru/">
           <img class="htmlacademy-logo" src="#" alt="Логотип HTML Academy. Перейти на сайт академии.">
         </a>

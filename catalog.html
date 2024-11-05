@@ -11,7 +11,7 @@
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="#" alt="Логотип города Седона.">
+          <img class="page-header-logo" src="images/logo.svg" width="138" height="64" alt="Логотип города Седона.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -43,7 +43,7 @@
     <main class="main-inner" data-test="main">
       <header class="inner-nav">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs-list">
+        <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link  navigation-home-link" href="index.html">
               <span class="visually-hidden">Вернуться на главную</span>
@@ -52,7 +52,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
       </header>
       <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтры</h2>
@@ -107,16 +107,17 @@
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="catalog-filter-wrapper">
               <div class="catalog-filter-inputes">
-                <input class="catalog-filter-input" type="number" name="min-interval" placeholder="от"
-                  aria-label="введите минимальную стоимость" value="0" step="100" min="0">
-                <input class="catalog-filter-input" type="number" name="max-interval" placeholder="до"
-                  aria-label="введите максимальную стоимость" value="9000" step="100" min="100">
-              </div>
-              <div class="catalog-filter-price">
+                <label class="filter-range-control">От<input class="catalog-filter-input" type="number"
+                    name="min-interval" placeholder="от" aria-label="введите минимальную стоимость" value="0" step="100"
+                    min="0"></label>
+                <label class="filter-range-control">До<input class="catalog-filter-input" type="number"
+                    name="max-interval" placeholder="до" aria-label="введите максимальную стоимость" value="9000"
+                    step="100" min="100"></label>
+
                 <button class="filter-range-handle min" type="button">
                   <span class="visually-hidden">Установить минимальную стоимость</span>
                 </button>
-                <button class="range-togglle togglle-max" type="button">
+                <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">Установить максмальную стоимость</span>
                 </button>
               </div>
@@ -166,14 +167,14 @@
             <p class="product-card-stars  product-card-stars-4"><span class="visually-hidden">
               Гостиница  одна звезда .</span></p>
             <p class="star star-1">
-                  <span class="visually-hidden">1 звезды</span>
+                  <span class="visually-hidden">1 звезда</span>
             </p>
             <p class="product-card-rating"><span>#</span></p>
           </li>
         -->
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-img" src="#" alt="Вид из грота на звездное небо.">
+              <img class="product-card-img" src="images/catalog/cave-starry-sky-hotel-1.jpg" width="300" height="212" alt="Пещера и звездное небо.">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -189,7 +190,7 @@
           </li>
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-img" src="#" alt="Радуга на фоне гор.">
+              <img class="product-card-img" src="images/catalog/rainbow-rocks-hotel-2.jpg" width="300" height="212" alt="Радуга на фоне гор.">
               <h3 class="product-card-title" lang="en">Villas at Poco Diablo</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -205,7 +206,7 @@
           </li>
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-img" src="#" alt="Горы на фоне голубого неба.">
+              <img class="product-card-img" src="images/catalog/mountains-blue-sky-hotel-3.jpg" width="300" height="212" alt="Горы на фоне голубого неба.">
               <h3 class="product-card-title" lang="en">Desert Quail Inn</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -214,14 +215,14 @@
             <button class="add-favorite-batton" type="button">в избранное</button>
             <p class="product-card-stars  product-card-stars-3 "><span class="visually-hidden">
                 Гостиница три звезды.</span></p>
-                <p class="star star-3">
-                  <span class="visually-hidden">3 звезды</span>
-                </p>
+            <p class="star star-3">
+              <span class="visually-hidden">3 звезды</span>
+            </p>
             <p class="product-card-rating">Рейтинг:<span>6,9</span></p>
           </li>
           <li class="product-card-item">
             <a class="product-card-link" href="#">
-              <img class="product-card-img" src="#" alt="Гора на фоне звёздного неба.">
+              <img class="product-card-img" src="images/catalog/rocks-starry-sky-hotel-4.jpg" width="300" height="212" alt="Скалы на фоне звёздного неба.">
               <h3 class="product-card-title" lang="en">GreenTree Inn</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -280,6 +281,8 @@
           <p class="subscribe-form-name">
             <label class="visually-hidden" for="user-email">Укажите ваш e-mail</label>
             <input type="email" required id="user-email" name="user-email" placeholder="Ваш e-mail">
+          </p>
+          <p class="subscribe-form-button">
             <button class="subscribe-button" type="submit">Подписаться</button>
           </p>
         </form>
